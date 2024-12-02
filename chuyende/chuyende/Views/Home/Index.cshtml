@@ -1,0 +1,95 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cado</title>
+    <link href="css/styles.css" rel="stylesheet"> <!-- Liên kết CSS -->
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Card -->
+        <div class="card profile-card" data-detail="Details about Pragadeswaran">
+            <img src="https://img.pikbest.com/ai/illus_our/20230413/ab83748283917672124bce2d8f0f8851.jpg!f305cw" alt="Profile Picture" class="profile-image">
+            <h3>Pragadeswaran</h3>
+            <p>Software Engineer | Available to work</p>
+        </div>
+
+        <!-- Word Library -->
+        <div class="card" data-detail="Manage and add new words to your library.">
+            <i>📚</i>
+            <h3>Word Library</h3>
+            <p>Manage and add new words.</p>
+        </div>
+
+        <!-- My Groups -->
+        <div class="card">
+            <a href="/Groups" style="text-decoration: none; color: inherit;">
+                <i>👥</i>
+                <h3>My Groups</h3>
+                <p>Manage study groups.</p>
+            </a>
+        </div>
+
+
+        <!-- Words to Practice -->
+        <div class="card" data-detail="List of words you need to practice.">
+            <i>✏️</i>
+            <h3>Words to Practice</h3>
+            <p>Review your words.</p>
+        </div>
+
+        <!-- My Notes -->
+        <div class="card" data-detail="Keep track of important notes.">
+            <i>📝</i>
+            <h3>My Notes</h3>
+            <p>Track your notes.</p>
+        </div>
+
+        <!-- Achievements -->
+        <div class="card achievements" data-detail="View your achievements and progress.">
+            <i>🏆</i>
+            <h3>Achievements</h3>
+            <p>View your progress.</p>
+        </div>
+
+
+        <!-- Biểu đồ -->
+        <div class="card chart-card" data-detail="Nội dung của Biểu đồ">
+            <i>📊</i>
+            <h3>Biểu đồ</h3>
+            <canvas id="lineChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Account Settings -->
+        <div class="card" data-detail="Manage your account settings.">
+            <i>⚙️</i>
+            <h3>Account Settings</h3>
+        </div>
+
+
+        <!-- Logout -->
+        <div class="card logout-btn" data-detail="You will be logged out.">
+            <i>🚪</i>
+            <button class="logout-btn" onclick="window.location.href='/Account/Logout'">Log Out</button>
+        </div>
+    </div>
+
+    <!-- Details Panel -->
+    <div class="details-panel">
+        <h2 id="detail-title">Details</h2>
+        <p id="detail-content">Select a card to view details.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+    <script src="js/scripts.js"></script> <!-- Liên kết JavaScript -->
+</body>
+</html>

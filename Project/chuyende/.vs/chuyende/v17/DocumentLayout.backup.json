@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\views\\home\\_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\views\\home\\_profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_QUANG_ONEDRIVE_TA_I_LI\u00CA_U_PRJMEMORIZEWORDS_DGV_PRJMEMORIZEWORDS_DGV_PRJMEMORIZEWORDS_MEMORIZEWIRDSDB_2.MDF/True/SqlTable/dbo.User_Information.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|c:\\users\\quang\\onedrive\\m\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{07282021-756A-49CB-8D1F-C3475ED45D98}|chuyende\\chuyende.csproj|solutionrelative:chuyende\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.User_Information.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_QUANG_ONEDRIVE_TA_I_LI\u00CA_U_PRJMEMORIZEWORDS_DGV_PRJMEMORIZEWORDS_DGV_PRJMEMORIZEWORDS_MEMORIZEWIRDSDB_2.MDF/True/SqlTable/dbo.User_Information.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_QUANG_ONEDRIVE_TA_I_LI\u00CA_U_PRJMEMORIZEWORDS_DGV_PRJMEMORIZEWORDS_DGV_PRJMEMORIZEWORDS_MEMORIZEWIRDSDB_2.MDF/True/SqlTable/dbo.User_Information.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-19T04:19:05.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "ToolTip": "SQLQuery1.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-19T01:58:11.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Program.cs",
+              "RelativeDocumentMoniker": "chuyende\\Program.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Program.cs",
+              "RelativeToolTip": "chuyende\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T03:11:22.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "chuyende\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "chuyende\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAUwGsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T03:03:43.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "chuyende\\Models\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Models\\UserProfile.cs",
+              "RelativeToolTip": "chuyende\\Models\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T02:59:11.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Views\\Home\\_Profile.cshtml",
+              "RelativeDocumentMoniker": "chuyende\\Views\\Home\\_Profile.cshtml",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Views\\Home\\_Profile.cshtml",
+              "RelativeToolTip": "chuyende\\Views\\Home\\_Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T01:29:37.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "chuyende\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "chuyende\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA0wEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T03:27:44.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "chuyende\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Controllers\\UserController.cs",
+              "RelativeToolTip": "chuyende\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T02:45:38.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "chuyende\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "chuyende\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwB0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T01:17:20.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "chuyende\\wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "chuyende\\wwwroot\\css\\styles.css",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAAAA4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-18T06:29:27.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "chuyende\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\quang\\OneDrive\\M\u00E1y t\u00EDnh\\test\\\u5C08\u984C\\chuyende\\chuyende\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "chuyende\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T21:42:19.247Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

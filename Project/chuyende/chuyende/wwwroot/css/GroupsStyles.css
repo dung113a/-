@@ -1,0 +1,317 @@
+﻿/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Group Page Layout */
+.group-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr;
+    gap: 20px;
+    width: 90%;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+}
+
+    .sidebar .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar .menu li {
+            margin-bottom: 10px;
+        }
+
+.nav-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .nav-btn:hover {
+        background-color: rgba(155, 89, 182, 0.5);
+    }
+
+/* Group Column */
+.group-column {
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background: rgba(155, 89, 182, 0.5);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .tab.active {
+        background: white;
+        color: #9b59b6;
+    }
+
+/* Group Section */
+.group-section {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5rem;
+    color: #9b59b6;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Group Content */
+.group-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.group-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+    .group-list li {
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #1e1e1e;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .group-list li:hover {
+            background-color: #9b59b6;
+            color: white;
+        }
+
+/* Buttons */
+.action-btn {
+    align-self: flex-start;
+    padding: 8px 15px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+    .action-btn:hover {
+        background-color: #7d3c98;
+    }
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 30, 30, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 300px;
+    display: none; /* Hidden by default */
+    z-index: 10;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+    .popup-content h3 {
+        margin: 0;
+        color: #9b59b6;
+        text-align: center;
+    }
+
+    .popup-content input {
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        background-color: #1e1e1e;
+        color: white;
+    }
+
+    .popup-content button {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .popup-content button[type="submit"] {
+            background-color: #9b59b6;
+            color: white;
+        }
+
+            .popup-content button[type="submit"]:hover {
+                background-color: #7d3c98;
+            }
+
+        .popup-content button[type="button"] {
+            background-color: #555;
+            color: white;
+        }
+
+            .popup-content button[type="button"]:hover {
+                background-color: #333;
+            }
+
+/* Hidden Popup */
+.hidden {
+    display: none;
+}
+
+/* Tab Content */
+.tab-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+    .tab-pane.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+    }
+
+/* Member List */
+.member-list {
+    flex: 0 0 60%;
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+    .member-list h4 {
+        margin-bottom: 10px;
+        color: #9b59b6;
+    }
+
+    .member-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .member-list ul li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #1e1e1e;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .member-list ul li:hover {
+                background-color: #9b59b6;
+                color: white;
+            }
+
+/* Member Stats */
+.fixed-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Chart and Achievements Styles */
+.chart-container,
+.achievement-table {
+    flex: 1;
+    max-width: 40%; /* Mỗi phần chiếm 40% chiều ngang */
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    height: 300px; /* Đảm bảo chiều cao giống nhau */
+}
+
+/* Chart Specific Styling */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Achievements Specific Styling */
+.achievement-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .achievement-table table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        color: white;
+    }
+
+        .achievement-table table th,
+        .achievement-table table td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }

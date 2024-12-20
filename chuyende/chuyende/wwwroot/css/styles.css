@@ -1,0 +1,270 @@
+﻿:root {
+    /* Biến màu chính */
+    --background-color: #ffffff; /* Nền trắng */
+    --text-color: #333333; /* Màu chữ tối */
+    --card-background: #f9f9f9; /* Nền card sáng */
+    --border-color: #e0e0e0; /* Màu viền nhẹ */
+    --box-shadow: rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    /* Màu tiêu đề nổi bật */
+    --title-blue: #007bff; /* Xanh lam */
+    --title-red: #ff4c4c; /* Đỏ */
+    --title-purple: #9b59b6; /* Tím */
+    --title-yellow: #f1c40f; /* Vàng */
+    /* Màu nhấn */
+    --accent-color: #007bff; /* Màu nhấn xanh lam */
+    --hover-color: #0056b3; /* Màu hover đậm hơn */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    /* Xóa align-items, justify-content để nội dung có thể đặt cố định tùy ý */
+    display: block;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột ngang */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto; /* Căn giữa container khi bình thường */
+}
+
+    .container.minimized {
+        display: flex;
+        flex-direction: column; /* Chuyển thành dạng cột dọc */
+        align-items: center;
+        width: auto;
+        gap: 10px;
+        position: fixed; /* Để dễ cố định vị trí */
+        left: 50px; /* Cột card dịch sang trái (có thể chỉnh lại) */
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999; /* Đưa sidebar lên trên */
+    }
+
+/* Cards */
+.card {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px var(--box-shadow);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+    .card.minimized {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    /* Tiêu đề của các card */
+    .card h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    /* Tiêu đề màu sắc nổi bật */
+    .card:nth-child(1) h3 {
+        color: var(--title-blue);
+    }
+
+    .card:nth-child(2) h3 {
+        color: var(--title-red);
+    }
+
+    .card:nth-child(3) h3 {
+        color: var(--title-yellow);
+    }
+
+    .card:nth-child(4) h3 {
+        color: var(--title-purple);
+    }
+
+    .card:nth-child(5) h3 {
+        color: var(--title-blue);
+    }
+
+    .card:nth-child(6) h3 {
+        color: var(--title-red);
+    }
+
+    .card:nth-child(7) h3 {
+        color: var(--title-yellow);
+    }
+
+    .card:nth-child(8) h3 {
+        color: var(--title-purple);
+    }
+
+    .card:nth-child(9) h3 {
+        color: var(--title-blue);
+    }
+
+    .card:nth-child(10) h3 {
+        color: var(--title-red);
+    }
+
+    /* Nội dung card */
+    .card p {
+        font-size: 1rem;
+        color: #666666; /* Màu chữ phụ */
+    }
+
+    .card i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 10px;
+    }
+
+/* Profile Card Styles */
+.profile-card {
+    grid-column: span 2; /* Profile card chiếm 2 cột khi ở trạng thái bình thường */
+    text-align: center;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+    .profile-card.minimized {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+/* Hover Effects for Cards */
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Chart Card */
+.card.chart-card {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Achievements Card */
+.card.achievements {
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Image */
+.profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Details Panel */
+.details-panel {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    grid-column: span 3;
+    text-align: center;
+    display: none;
+    border: 1px solid var(--border-color);
+}
+
+/* Khi minimized, hiển thị details-panel to và cố định */
+.container.minimized ~ .details-panel {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 300px; /* Chỉnh để không đè lên cột card */
+    transform: translateY(-50%);
+    width: 80vw; /* Mở rộng to */
+    height: 80vh;
+    background: #f0f4f8; /* Màu nền khác cho dễ nhìn */
+    box-shadow: 0 10px 30px var(--box-shadow);
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 998; /* Dưới sidebar một chút nếu cần */
+}
+
+/* Khi minimized, ẩn nội dung chữ của card trừ icon */
+.card.minimized h3,
+.card.minimized p,
+.card.minimized button {
+    display: none;
+}
+
+/* Align minimized cards vertically */
+.container.minimized .card:not(.profile-card) {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: var(--accent-color);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+    .logout-btn:hover {
+        background-color: var(--hover-color);
+        color: #ffffff;
+    }
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .tab.active {
+        background-color: var(--hover-color);
+        color: #ffffff;
+    }
+
+.tab-content {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}

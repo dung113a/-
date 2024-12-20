@@ -1,0 +1,21 @@
+﻿@model chuyende.Models.UserProfile
+
+<div class="profile-card card"
+     data-name="@Model.Una"
+     data-email="@Model.Uemail"
+     data-uacc="@Model.Uacc"
+     data-star="@Model.Star"
+     data-registerdate="@(Model.RegisterDate.HasValue ? Model.RegisterDate.Value.ToString("dd/MM/yyyy") : "")">
+    @if (!string.IsNullOrEmpty(Model.Uavatar))
+    {
+        <img src="@Model.Uavatar" alt="Profile Picture" class="profile-image" />
+    }
+    else
+    {
+        <img src="https://img.pikbest.com/ai/illus_our/20230413/ab83748283917672124bce2d8f0f8851.jpg!f305cw" alt="Default Avatar" class="profile-image" />
+    }
+    <h3>@Model.Una</h3>
+    <p>Email: @Model.Uemail</p>
+    <p>Điểm: @Model.Star</p>
+    <p>Ngày đăng ký: @(Model.RegisterDate.HasValue ? Model.RegisterDate.Value.ToString("dd/MM/yyyy") : "N/A")</p>
+</div>

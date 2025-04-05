@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "project5-unigap",
+  "private_key_id": "b98f3a1431c8557277640a9a83c08bf898a1c24c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCUNEup6Hco1Wg0\nSoX5YJoP/yyqE1QgMgGbz2NP3S1T1dL3ApqK214C6sesjxOJhIVkja7RlKX+LNXG\n6nI6Ez38ivhbngY+1oY/c2ETAK9/ShqxfWipDlyV/Ja4uOtwPG6hzSgGlEopv74R\nMhxhNYvl+2WvJCJOdIWRMApQFj/UTlau4ufHwetbx5elgxQOOtr3PjXG2f0fsnfl\n9g2tsJbj9swIBgSfFNZw4fswLxwWyfyLSWB2ue1hz837qLY2ioHWVol/TfpQQk2X\nDYryoZopC3WNzif/p9NW9M9vfiFRY1nFHJrBwbllnbpwJbtnSA/toaOIDP/DY0G3\nqdPXyqjTAgMBAAECggEABEHm/9/dtx6U+muUTbBTZ1eSljrX6n+FQaSY2xfPet5k\nS77svEXGUu8hAqQEO6nC6zs8D76QG4J44a36ehCeHJMhb1WqzZimt/aTOKiHDMZk\nMz/Bse7nr1ICQmw4LJE6hwtjCvgCPrtzX6sWMEoJgCHTWfn/wkvhSmUcPBC85Kxl\nlMKitiace6k0G7B2NDobYOqnwgB/ixOyejfCWCoPUteBlsFaTc8L/vA6f5K+TsX4\nkiZe+FHLx4UJPCaZ6rVSBWiP61oYKRjlFOqdBREWALXN2/9cF9+Z4D4Q2LnI4hQK\nR+HaFp0Vw3yv4LravKVTo305YzpPm5YUtGPBJf0jAQKBgQDHOrSVohwGvUsLvxWJ\n2xKGkYvizM5L12sy8bfBaYeFwOhs9WuFPxvG5w+OX4UsZ0sqm5H1AK66l64A6AH0\nchPqiet4G5LV8+JYXpDFVRHVzvP03pZMHj1oeAWkczbKugGqNOaLl6HIqjL5M8zM\nKT8KYnS821HxBomPg+yZpeQv2wKBgQC+b3AGQWOKYj7vUGmoBW1HS35hNddEYH63\n0jeDZI8HZ79yKiKxh1A0Eqzhmew4ACMre9OM/7reH5iiILo84CACnxqR8fYhwE+G\nj43p62q59GgyHdQhPhpn/cOB0Aum7WABV3H74hQat3Us6x1busNc0iD/RT9iySFz\n3EnkBSuYaQKBgAZguLs5j1Af6zEbEuNw4ezw59uA1vHSmZnt5wYIDNCZVld2m9SO\nKqN5biQOpsK/I8bfaBLBzNYoWOeqhbV/mWeetq0HpPG4dvyBOn02tfV0RJcIMSOK\nrEiV3wher9hZkAgU3XSGjCVSXYNgxyOaBmycrkQFeWAP54Nyo7ZfeyiVAoGBAKoK\nKwcK3+yyqOta69yha+AbIq9+OcbOOpe8VuE1qxi7pJA122CVKCI3ArM2k1u1k7HC\nETV3Ks4nfExX2LN+lFaC5mCmolWkt9241Min8lY0S81kIQPFxiJQzn9c2uqkTfMk\nt5xnU/g/E5uWHFLJwqNg5SHKHT0BxqMDcd7uVuzxAoGAHTQ8UhMdE4Am8LNFVNe0\nX2o3VHHCsYAJ//J57hb1gX9vdVn+/k9zN0XZt5Z2C5QGR5APrAtW37qCtCCDdJHj\nf3w2w8d3RhLPCDfd3ZDWUvkvszMZXn/7+HTbfvDAhwvBUiCiz632VooAUK+OD/Z+\nsHcFl2/+2ovYSr608VQBHFo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "unigap-project@project5-unigap.iam.gserviceaccount.com",
+  "client_id": "113987874725634931103",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/unigap-project%40project5-unigap.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

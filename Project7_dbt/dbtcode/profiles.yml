@@ -1,0 +1,12 @@
+dbtcode:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /home/dungluu/MyProject/UniGap_Lv1_project/Project7_dbt/dbtcode/conf/project5-unigap-b98f3a1431c8.json
+      project: project5-unigap
+      dataset: Data_model
+      location: us-central1 
+      threads: 4
+

@@ -8,7 +8,7 @@
 ## 🧱 Kiến trúc dữ liệu tổng thể
 
 Luồng dữ liệu gồm các bước sau:
-=> raw_layer_dataset.project_5_6_7 ↓ stagingTb ← staging (làm sạch ban đầu) ↓ dim_product dim_user ← bảng dimension ↓ fact_checkout ← bảng fact (hành vi thanh toán)
+=> raw_layer_dataset.project_5_6_7(data tai bigquery)  ↓ Data_model.stagingTb ← staging (làm sạch ban đầu) ↓ dim_product dim_user ← bảng dimension ↓ fact_checkout ← bảng fact 
 
 ---
 ## 📁 Các bảng chính và vai trò

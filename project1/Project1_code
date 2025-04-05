@@ -1,0 +1,224 @@
+# 1. Thời gian
+
+# 2. Mô tả công việc
+
+Dữ liệu trên đang được đặt trên Linux server, cần team Data Engineer sử dụng command line Linux hỗ trợ các tác vụ sau để có các thông tin cơ bản về dữ liệu
+
+1. Sắp xếp các bộ phim theo ngày phát hành giảm dần rồi lưu ra một file mới
+2. Lọc ra các bộ phim có đánh giá trung bình trên 7.5 rồi lưu ra một file mới
+3. Tìm ra phim nào có doanh thu cao nhất và doanh thu thấp nhất
+4. Tính tổng doanh thu tất cả các bộ phim
+5. Top 10 bộ phim đem về lợi nhuận cao nhất
+6. Đạo diễn nào có nhiều bộ phim nhất và diễn viên nào đóng nhiều phim nhất
+7. Thống kê số lượng phim theo các thể loại. Ví dụ có bao nhiêu phim thuộc thể loại Action, bao nhiêu thuộc thể loại Family, ….
+8. Idea của bạn để có thêm những phân tích cho dữ liệu?
+
+# 3. Kiến  thức thu được
+
+# 4. Mã code
+
+---
+
+### **1. Sắp xếp các bộ phim theo ngày phát hành giảm dần**
+
+Lệnh:
+
+```
+awk -F',' '{
+    split($16, date, "/");
+    printf "%04d-%02d-%02d,", (date[3] < 50 ? 2000 + date[3] : 1900 + date[3]), date[1], date[2];
+    for (i=1; i<=NF; i++) printf "%s%s", $i, (i<NF?FS:ORS);
+}' movies.csv | sort -t ',' -k1r > sorted_by_date.csv
+
+```
+
+**Giải thích**:
+
+- **`awk`**: Dùng để xử lý dữ liệu theo từng dòng.
+    - `split($16, date, "/")`: Tách cột thứ 16 (ngày phát hành) thành các phần tử ngày, tháng, năm.
+    - `printf "%04d-%02d-%02d"`: Định dạng lại ngày/tháng/năm thành dạng `YYYY-MM-DD` để thuận tiện cho việc sắp xếp.
+    - `for (i=1; i<=NF; i++)`: Lặp qua tất cả các cột để in lại dòng dữ liệu.
+- **`sort -t ',' -k1r`**: Sắp xếp dữ liệu theo cột đầu tiên (ngày tháng) giảm dần (`k1r`).
+- `sort -t ','`: Chỉ định dấu phẩy (`,`) là ký tự phân tách các trường (field) trong file.
+- `k1r`: Sắp xếp theo trường đầu tiên (field 1) theo thứ tự giảm dần (`r` là viết tắt của "reverse").
+
+**Chú ý**:
+
+- Nếu cột ngày tháng không phải là cột thứ 16, cần thay `$16` bằng cột chính xác.
+- Kết quả được lưu trong file `sorted_by_date.csv`.
+
+---
+
+### **2. Lọc các bộ phim có đánh giá trung bình trên 7.5**
+
+Lệnh:
+
+```
+csvsql --query "SELECT * FROM movies WHERE vote_average > 7.5 ORDER BY vote_average DESC" movies.csv > task2.csv
+
+```
+
+**Giải thích**:
+
+- **`csvsql`**: Một công cụ mạnh mẽ để xử lý file CSV như một cơ sở dữ liệu SQL.
+    - `SELECT *`: Chọn tất cả các cột.
+    - `WHERE vote_average > 7.5`: Lọc các bộ phim có đánh giá trung bình lớn hơn 7.5.
+    - `ORDER BY vote_average DESC`: Sắp xếp theo đánh giá giảm dần.
+- Kết quả lưu trong file `task2.csv`.
+
+**Chú ý**:
+
+- Đảm bảo cài đặt thư viện `csvkit` để sử dụng lệnh `csvsql`.
+- Nếu dữ liệu bị lỗi (ví dụ: thiếu giá trị), cần xử lý trước khi chạy lệnh.
+
+---
+
+### **3. Tìm phim có doanh thu cao nhất và thấp nhất**
+
+Lệnh:
+
+```
+awk -F',' 'NR==1 {next} {if ($5+0 > max) {max=$5; max_line=$0} if ($5+0 < min || NR==2) {min=$5; min_line=$0}} END {print "Highest Revenue:", max; print max_line; print "Lowest Revenue:", min; print min_line}' movies.csv
+
+```
+
+**Giải thích**:
+
+- **`NR==1 {next}`**: Bỏ qua dòng tiêu đề.
+- **`if ($5+0 > max)`**: Kiểm tra nếu doanh thu (cột 5) lớn hơn giá trị lớn nhất hiện tại.
+- **`if ($5+0 < min || NR==2)`**: Kiểm tra nếu doanh thu nhỏ hơn giá trị nhỏ nhất hiện tại hoặc là dòng đầu tiên sau tiêu đề.
+- **`END`**: Sau khi đọc hết file, in ra kết quả.
+
+**Chú ý**:
+
+- Cột doanh thu (`$5`) phải đúng với vị trí trong file CSV. Nếu không, cần thay đổi cho phù hợp.
+
+---
+
+### **4. Tính tổng doanh thu của tất cả các bộ phim**
+
+Lệnh:
+
+```
+awk -F',' 'NR > 1 {total += $5} END {print "Total Revenue:", total}' movies.csv
+
+```
+
+**Giải thích**:
+
+- **`NR > 1`**: Bỏ qua dòng tiêu đề.
+- **`total += $5`**: Cộng giá trị doanh thu của từng dòng vào biến `total`.
+- **`END`**: In tổng doanh thu sau khi đọc hết file.
+
+**Chú ý**:
+
+- Đảm bảo cột doanh thu (`$5`) chính xác.
+
+---
+
+### **5. Top 10 bộ phim có lợi nhuận cao nhất**
+
+Lệnh:
+
+```
+awk -F',' 'NR > 1 {profit = $5 - $4; print profit "," $0}' movies.csv | sort -t',' -k1,1nr | head -n 10 > top_10_profitable_movies.csv
+
+```
+
+**Giải thích**:
+
+- **`profit = $5 - $4`**: Tính lợi nhuận bằng cách lấy doanh thu (`$5`) trừ chi phí sản xuất (`$4`).
+- **`sort -t',' -k1,1nr`**: Sắp xếp theo cột lợi nhuận giảm dần.
+- **`head -n 10`**: Lấy 10 dòng đầu tiên.
+
+**Chú ý**:
+
+- Đảm bảo cột doanh thu và chi phí sản xuất đúng vị trí.
+
+---
+
+### **6. Đạo diễn và diễn viên có nhiều phim nhất**
+
+### Đạo diễn:
+
+```
+awk -F',' 'NR>1 && $9 != "" {count[$9]++} END {
+    max = 0;
+    for (name in count) {
+        if (count[name] > max) {
+            max = count[name];
+            top_director = name;
+        }
+    }
+    print "The director with the most films:", max, top_director;
+}' movies.csv > task6.csv
+
+```
+
+### Diễn viên:
+
+```
+awk -F',' 'NR > 1 {
+    split($7, actors, "|");
+    for (i in actors) count[actors[i]]++;
+} END {
+    max_count = 0;
+    max_actor = "";
+    for (actor in count) {
+        if (count[actor] > max_count) {
+            max_count = count[actor];
+            max_actor = actor;
+        }
+    }
+    print "The actor with the most films:", max_actor, "with", max_count, "films";
+}' movies.csv
+
+```
+
+**Giải thích**:
+
+- **Đạo diễn**: Đếm số lần xuất hiện của mỗi đạo diễn (`$9`).
+- **Diễn viên**: Tách danh sách diễn viên (`$7`) bằng ký tự `|`, sau đó đếm số lần xuất hiện của từng diễn viên.
+
+**Chú ý**:
+
+- Đảm bảo cột đạo diễn và diễn viên đúng vị trí.
+
+---
+
+### **7. Thống kê số lượng phim theo thể loại**
+
+Lệnh:
+
+```
+awk -F',' 'NR > 1 {
+    split($6, genres, "|");
+    for (i in genres) count[genres[i]]++;
+} END {
+    for (genre in count) print genre, count[genre];
+}' movies.csv > genre_count.csv
+
+```
+
+**Giải thích**:
+
+- **`split($6, genres, "|")`**: Tách các thể loại (cột 6) bằng ký tự `|`.
+- **`count[genres[i]]++`**: Đếm số lần xuất hiện của từng thể loại.
+
+---
+
+### **8. Ý tưởng mở rộng phân tích dữ liệu**
+
+- **Phân tích xu hướng**:
+    - Doanh thu trung bình của các bộ phim qua từng năm.
+    - Xu hướng thể loại phim phổ biến theo thời gian.
+- **Hiệu quả của đạo diễn**:
+    - Đạo diễn nào tạo ra doanh thu trung bình cao nhất.
+- **Phân tích diễn viên**:
+    - Diễn viên nào góp mặt trong các bộ phim có doanh thu cao nhất.
+- **Phân tích đánh giá**:
+    - Mối quan hệ giữa chi phí sản xuất và đánh giá trung bình.
+
+---
+
+Nếu bạn cần thêm hỗ trợ hoặc muốn giải thích chi tiết hơn, cứ thoải mái hỏi nhé! 😊
